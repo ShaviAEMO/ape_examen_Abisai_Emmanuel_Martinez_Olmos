@@ -44,6 +44,6 @@ class User extends Authenticatable
     ];
     public function userDomicilio()
     {
-        return $this->hasOne(UserDomicilio::class);
+        return $this->hasOne(UserDomicilio::class, 'id_user');
     }
 }
